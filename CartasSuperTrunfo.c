@@ -4,12 +4,11 @@ int main(){
         //variaveis para o cadastro da carta 1 e 2
         char Estado1,Estado2;
         char Codigo1[20], Codigo2[20];
-        char Cidade1[20], Cidade2[20];
-        int População1, População2;
+        char Cidade1[20], Cidade2[20]; 
         float Area1, Area2;
         float Pib1, Pib2;
         int Pontos_Turisticos1,Pontos_Turisticos2;
-        
+        int populacao, populacao1; 
         //Cadastro da informação da 1º Carta  
         printf("Digite a letra do estado(A-H):\n");  
         scanf(" %c", &Estado1);
@@ -21,7 +20,7 @@ int main(){
         scanf(" %s", Codigo1);
         
         printf("Digite a População da cidade:\n");
-        scanf("%d", &População1);
+        scanf("%d", &populacao);
 
         printf("Digite a Area da cidade:\n");
         scanf("%f", &Area1);
@@ -44,7 +43,7 @@ int main(){
        scanf(" %s", Codigo2);
        
        printf("Digite a População da cidade:\n");
-       scanf(" %d",&População2);
+       scanf(" %d",&populacao1);
 
        printf("Digite a Area da cidade:\n");
        scanf(" %f",&Area2);
@@ -61,7 +60,7 @@ int main(){
        printf("Estado:%c\n",Estado1);
        printf("Código:%s\n",Codigo1);
        printf("Cidade:%s\n", Cidade1);
-       printf("População:%d\n", População1);
+       printf("População:%d\n", populacao);
        printf("Área da cidade:%.2f km²\n", Area1);
        printf("PIB:%.2f\n", Pib1);
        printf(" Pontos Turisticos:%d\n", Pontos_Turisticos1);
@@ -72,7 +71,7 @@ int main(){
        printf("Estado:%c\n",Estado2);
        printf("Código:%s\n",Codigo2);             
        printf("Cidade:%s\n", Cidade2);
-       printf("População:%d\n", População2);
+       printf("População:%d\n", populacao1);
        printf("Área da cidade:%.2f km²\n", Area2);
        printf("PIB:%.2f\n", Pib1);
        printf(" Pontos Turisticos:%d\n", Pontos_Turisticos2);
